@@ -1,0 +1,23 @@
+paths:
+  books_csv: data/books.csv
+  raw_dir: data/raw
+  chunks: data/processed/chunks.jsonl
+  index_dir: data/index          # في Colab يمكن تغييره عبر MALIKI_INDEX_DIR ليكون على Drive
+  glossary: data/glossary.csv
+  query_log: logs/queries.jsonl
+llm:
+  model: claude-sonnet-5-5        # غيّره حسب النموذج المتاح لك
+embedding:
+  model: BAAI/bge-m3
+  batch_size: 32
+  max_seq_length: 512
+reranker:
+  enabled: true
+  model: BAAI/bge-reranker-v2-m3
+retrieval:
+  k_each: 40        # عدد نتائج كل قناة بحث
+  rerank_pool: 30   # عدد المرشحين لإعادة الترتيب
+  final_k: 8        # عدد المقاطع النهائية
+  rrf_k: 60
+chunking:
+  link_threshold: 85   # حد التشابه لربط "قوله" بجملة المتن

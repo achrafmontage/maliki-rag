@@ -1,0 +1,4 @@
+book_id,title,author,death_hijri,kind,file,format
+khalil,مختصر خليل,خليل بن إسحاق,776,matn,khalil.txt,openiti
+kharashi,شرح الخرشي على مختصر خليل,محمد الخرشي,1101,sharh,kharashi.txt,openiti
+dasuqi,حاشية الدسوقي على الشرح الكبير,محمد الدسوقي,1230,hashiya,dasuqi.txt,openiti
